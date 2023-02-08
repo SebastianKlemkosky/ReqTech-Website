@@ -90,44 +90,95 @@ a {
 img {
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 /* nav */
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--main-blue);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
+nav ul{
+  list-style: none;
+  padding:0;
+  background:#444;
 }
 
-.nav-list {
-  display: flex;
-  margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
-
-.nav-list a {
+nav ul li a{
+  color:#ddd;
+  text-decoration: none;
+  padding: .8rem 1rem;
   display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
+  line-height: 1;
+}
+nav ul li{
+  border-bottom: 1px dotted #ddd;
+}
+/*styling logo*/
+
+nav div:first-child{
+  background:#222;
+}
+nav div:first-child h1{
+  line-height: 0;
+  padding: .8rem 0rem;
+  text-align: center;
+}
+nav div:first-child img{
+  filter: contrast(0);
 }
 
-.nav-list a:hover {
-  background: var(--main-hover);
+nav div:first-child h1, nav ul{
+  margin:0;
+}
+
+/*Styling for larger devices*/
+
+@media only screen and (min-width: 30em){
+  nav{
+      display: flex;
+      justify-content: space-between;
+      background: var(--main-blue);
+      align-items: center;
+  }
+  
+  nav ul{
+      display: flex;
+      align-items: center;
+      background:none;
+      flex-wrap: wrap;
+  }
+  nav div:first-child h1{
+      padding: 0;
+      margin:0 1rem;
+  }
+  nav div:first-child img{
+      height: 40px;
+      
+  }
+  nav ul li{
+      border-bottom:none;
+      flex: 1 0 auto;
+      position: relative;
+  }
+  nav ul li a{
+      padding:1.2rem 1rem;
+  }
+  nav ul li a::before, nav ul li a::after{
+      content: "";
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width:0%;
+      height: 2px;
+      background:var(--main-hover);
+      transition: .2s width ease-in-out;
+  }
+  
+  nav ul li a::before{
+      left:0;
+  }
+  
+  nav ul li a:hover::after,nav ul li a:hover::before{
+      width: 50%;
+  } 
+ 
 }
 
 /*Welcome Section */
@@ -138,9 +189,10 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg'); 
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+   url('https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO7MITYXEIZ5XU67YXSY7EDWFA'); 
   background-size: cover;
- height: 600px;
+  height: 600px;
   color: #fff;
 }
 
