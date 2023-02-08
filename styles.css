@@ -3,9 +3,6 @@
   --main-black: #000501;
   --main-blue: #06114b;
   --main-hover: #265a99 ;
-  /*Navbar Colors */
-  
-  
 }
 
 * {
@@ -14,86 +11,24 @@
   font-family: sans-serif;
 }
 
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
+html{
   scroll-behavior: smooth;
 }
 
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
+body, html{
+  font-size: 100%;
+  font-family: sans-serif;
 }
 
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
+body,html{
+  margin:0;
+  padding: 0;
 }
 
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* Base styles */
-body {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
+h1{
   color: var(--main-white);
 }
 
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--main-white);
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* nav */
 nav ul{
   list-style: none;
   padding:0;
@@ -110,8 +45,8 @@ nav ul li a{
 nav ul li{
   border-bottom: 1px dotted #ddd;
 }
-/*styling logo*/
 
+/*styling logo*/
 nav div:first-child{
   background:#222;
 }
@@ -134,7 +69,7 @@ nav div:first-child h1, nav ul{
   nav{
       display: flex;
       justify-content: space-between;
-      background: var(--main-blue);
+      background: #222;
       align-items: center;
   }
   
@@ -179,7 +114,7 @@ nav div:first-child h1, nav ul{
       width: 50%;
   } 
  
-}
+  }
 
 /*Welcome Section */
 .welcome-section {
@@ -190,9 +125,9 @@ nav div:first-child h1, nav ul{
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
-   url('https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO7MITYXEIZ5XU67YXSY7EDWFA'); 
+   url('https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO6IT45INVYFRLHKN5IY7EGDDA'); 
   background-size: cover;
-  height: 600px;
+  height: 500px;
   color: #fff;
 }
 
