@@ -1,6 +1,6 @@
 :root {
   --main-white: #e0D8DE; 
-  --main-black: #000501;
+  --main-grey: #222;
   --main-blue: #06114b;
   --main-hover: #265a99 ;
 }
@@ -48,16 +48,15 @@ nav ul li{
 
 /*styling logo*/
 nav div:first-child{
-  background:#222;
+  background: var(--main-grey);
+  
 }
 nav div:first-child h1{
   line-height: 0;
   padding: .8rem 0rem;
   text-align: center;
 }
-nav div:first-child img{
-  filter: contrast(0);
-}
+
 
 nav div:first-child h1, nav ul{
   margin:0;
@@ -69,7 +68,7 @@ nav div:first-child h1, nav ul{
   nav{
       display: flex;
       justify-content: space-between;
-      background: #222;
+      background: var(--main-grey);
       align-items: center;
   }
   
@@ -119,16 +118,25 @@ nav div:first-child h1, nav ul{
 /*Welcome Section */
 .welcome-section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
-   url('https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO6IT45INVYFRLHKN5IY7EGDDA'); 
+   url('https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO67B73LZYGQL4WRJGMY7EHRKA'); 
   background-size: cover;
   height: 500px;
   color: #fff;
+}
+
+.welcome-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dbe4ed;
+  background-size: cover;
+  
+
 }
 
 
@@ -214,7 +222,7 @@ nav div:first-child h1, nav ul{
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: var(--main-hover);
+  color: var(--main-grey);
 }
 .right-side .input-box{
   height: 50px;
