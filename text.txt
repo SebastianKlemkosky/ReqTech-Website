@@ -1,0 +1,44 @@
+<!-- START ABOUT SECTION -->
+        <section id='about-section' class='about-section'>
+          <div class="about-container">
+
+            <div class="about-child magenta">
+              <h3>Follow Us</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla dolor, lacinia non lacus ac, ultricies vulputate justo. Fusce molestie condimentum magna, id sollicitudin nisi pellentesque hendrerit. Vestibulum varius ante id facilisis tristique. Nunc egestas, orci eget maximus varius, magna magna volutpat quam, et suscipit eros velit sit amet ex. Nam consequat dictum leo eu imperdiet. Proin non vulputate felis. Nulla ullamcorper enim ut urna consectetur, vitae fringilla augue imperdiet. Curabitur fermentum gravida eros, id dapibus massa tempor eu. Nunc molestie ornare velit non aliquet. Nullam venenatis maximus neque, fringilla blandit lectus porttitor a. Mauris non consectetur nibh. Quisque id vulputate sapien. Sed lobortis nisi risus, sed sollicitudin massa euismod sit amet. Curabitur ac lacus odio.
+              </p>
+            </div>
+            
+            <div class="about-child green">
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freqtech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            
+          </div>
+        </section>
+        <!-- END ABOUT SECTION -->
+
+
+CSS
+
+/*About Section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.about-container {
+  display: flex;
+}
+
+.about-child {
+  flex: 1;
+  border: 2px solid black;
+}  
+
+.about-child:first-child {
+  margin-right: 20px;
+} 

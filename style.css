@@ -1,0 +1,152 @@
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 2px 2px #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column1 {
+  flex-basis: 80%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.column2 {
+  flex-basis: 20%;
+  padding: 20px;
+  background-color: #d9d9d9;
+}
+
+.column2 iframe {
+  width: 340px;
+  height: 500px;
+  border: none;
+  overflow: hidden;
+  
+  margin: 0 auto; /* center the iframe horizontally */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column2 {
+    text-align: center;
+  }
+
+  .column2 iframe {
+    margin: 20px auto; /* center the iframe vertically and horizontally */
+  }
+}
+
+
+
+/* Contact section styles */
+.contact {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #444;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
