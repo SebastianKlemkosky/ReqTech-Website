@@ -26,6 +26,7 @@ h1{
 nav ul{
   list-style: none;
   background:#444;
+  font-weight: bolder;
 }
 
 nav ul li a{
