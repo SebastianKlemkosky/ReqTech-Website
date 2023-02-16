@@ -31,10 +31,10 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url("https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO6OZKK52K3W4VFRAC4Y7OOAJQ");
+  background-image: url("images/ReqTechBackground.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,11 @@ nav ul li a {
   background-color: #f0f0f0;
 }
 
+.column1 img{
+  width: 80%;
+  border: #000 solid;
+}
+
 .column2 {
   flex-basis: 20%;
   padding: 20px;
@@ -102,6 +107,29 @@ nav ul li a {
   }
 }
 
+/* Contact INFO*/
+.contact-info {
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
 
 
 /* Contact section styles */

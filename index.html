@@ -3,38 +3,68 @@
   <head>
     <title>ReqTech</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />  
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <a href="#"><img src="https://github.com/SebastianKlemkosky/ReqTech-Website/blob/main/images/ReqTech_Logo_1_100x100.jpg" alt="Logo"></a>
+          <a href="#"><img src="images/R Logo.jpg" alt="Logo"></a>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#message">Message</a></li>
         </ul>
       </nav>
     </header>
-    <section class="hero">
+    <!-- Start  Hero -->
+    <section class="hero" >
       <div class="hero-content">
         <h1>ReqTech</h1>
         <p> Multimedia Network Installation Made Easy!</p>
       </div>
     </section>
-    <div class="container">
-      <div class="column1">
-        <h2>About us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, urna in commodo vulputate, nisl arcu ullamcorper augue, sit amet egestas massa augue vel ex. </p>
+    <!-- End Hero -->
+
+    <!-- Start About -->
+    <section id="about">
+      <div class="container">
+        <div class="column1">
+          <h2>About us</h2>
+          <p>As the world of technology advances we want to make sure your home stays ahead of the curve! At ReqTech we specialize im making your installation pain free and ensure you know how to use your technology to its full potential. Customer service is our number one priority, so let us help you get the smart house of your dreams!</p>
+          <div>
+            <img src="images/325870269_6230277673671705_6723053676516527493_n.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="column2">
+          <h2>Follow Our Facebook Page</h2>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freqtech&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>      </div>
+        </div>
+    </section>
+      <!-- End About -->
+
+     
+
+      <!-- Start Contact Info -->
+    <section>
+      <div id='contact' class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Phone: (210) 544-1174</p>
+        <p>Email: Rudy@Reqtech.net</p>
       </div>
-      <div class="column2">
-        <h2>Follow Our Facebook Page</h2>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freqtech&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>      </div>
-      </div>
-      
-    <section class="contact">
-      <h2>Contact Us</h2>
+    </section>
+    <!-- End Contact Info -->
+
+    <!-- Start Message -->
+    <section id='message' class="contact">
+      <h2>Or Send Us a Email Directly</h2>
       <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
@@ -45,8 +75,12 @@
         <button type="submit">Send</button>
       </form>
     </section>
+    <!-- End Message -->
+
+    <!-- Start Footer -->
     <footer>
       <p>Copyright &copy; 2023</p>
     </footer>
+    <!-- End Footer -->
   </body>
 </html>
