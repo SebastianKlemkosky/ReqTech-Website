@@ -1,37 +1,124 @@
-header {
-  background-color: rgb(28,28,26);
-  color: #fff;
+:root {
+  --main-white: #e0D8DE; 
+  --main-grey: #1C1C1A;
+  --main-blue: #06114b;
+  --main-hover: #e0D8DE ;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+
+
+html{
+  scroll-behavior: smooth;
 }
 
-.logo img {
-  height: 50px;
+body, html{
+  font-size: 100%;
+  font-family: sans-serif;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
+body,html{
+  margin:0;
   padding: 0;
 }
 
-nav ul li {
-  margin: 0 10px;
+h1{
+  color: var(--main-white);
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+nav ul{
+  list-style: none;
+  padding:0;
+  background:#444;
 }
+
+nav ul li a{
+  color:#ddd;
+  text-decoration: none;
+  padding: .8rem 1rem;
+  display: block;
+  line-height: 1;
+}
+nav ul li{
+  border-bottom: 1px dotted #ddd;
+}
+
+/*styling logo*/
+nav div:first-child{
+  background: var(--main-grey);
+  
+}
+nav div:first-child h1{
+  line-height: 0;
+  padding: .8rem 0rem;
+  text-align: center;
+}
+
+
+nav div:first-child h1, nav ul{
+  margin:0;
+}
+
+/*Styling for larger devices*/
+@media only screen and (min-width: 30em){
+    nav{
+      display: flex;
+      justify-content: space-between;
+      background: var(--main-grey);
+      align-items: center;
+    }
+  
+    nav ul{
+      display: flex;
+      align-items: center;
+      background:none;
+      flex-wrap: wrap;
+    }
+
+    nav div:first-child h1{
+      padding: 0;
+      margin:0 1rem;
+    }
+
+    nav div:first-child img{
+      height: 40px;
+      
+    }
+
+    nav ul li{
+      border-bottom:none;
+      flex: 1 0 auto;
+      position: relative;
+    }
+
+    nav ul li a{
+      padding:1.2rem 1rem;
+    }
+    
+    nav ul li a::before, nav ul li a::after{
+      content: "";
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width:0%;
+      height: 2px;
+      background:var(--main-hover);
+      transition: .2s width ease-in-out;
+    }
+  
+    nav ul li a::before{
+      left:0;
+    }
+  
+    nav ul li a:hover::after,nav ul li a:hover::before{
+      width: 50%;
+    } 
+ 
+  }
+  
 
 .hero {
-  background-image: url("images/ReqTechBackground.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+   url('images/ReqTechBackground.jpg'); 
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -39,6 +126,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .hero-content {
@@ -46,6 +134,16 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.hero img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dbe4ed;
+  background-size: cover;
+  
+
 }
 
 .hero h1 {
