@@ -1,5 +1,5 @@
 header {
-  background-color: #333;
+  background-color: rgb(28,28,26);
   color: #fff;
 }
 
@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url("hero-image.jpg");
+  background-image: url("https://raw.githubusercontent.com/SebastianKlemkosky/ReqTech-Website/main/images/ReqTechBackground.jpg?token=GHSAT0AAAAAAB6BKKO6OZKK52K3W4VFRAC4Y7OOAJQ");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -41,9 +41,22 @@ nav ul li a {
   text-align: center;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .hero h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 4em;
+  text-shadow: 2px 2px #333;
+}
+
+.hero p{
+  color: #fff;
+  font-size: 2em;
   text-shadow: 2px 2px #333;
 }
 
