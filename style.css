@@ -146,9 +146,9 @@
       justify-content: space-between;
       background: var(--main-black);
       align-items: center;
-      position: fixed;
       top: 0px;
       width: 100%;
+      
     }
   
     nav ul{
@@ -243,7 +243,7 @@
     color: #fff;
     font-size: 2em;
     text-shadow: 2px 2px #333;
-    
+    margin-bottom: 30px;
   }
 
   
@@ -255,17 +255,31 @@
   
 }
 
+.child:first-child {
+  margin-bottom: 20px; /* Add spacing between the first child div and the second child div */
+}
+
+.container h2{
+  color: var(--main-white);
+}
+
 .column1 {
   flex-basis: 80%;
   padding: 20px;
   background-color: #f0f0f0;
-  
 }
 
 .column1 img{
-  width: 90%;
-  border: #000 solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
+
+.column1 p{
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
 
 .column2 {
   flex-basis: 20%;
@@ -302,12 +316,15 @@
 
 /* Contact INFO*/
 .contact-info {
-  margin: 20px 0;
-  background-color: var(--main-white);
+  background-color: #f5f5f5;
   padding: 50px;
   text-align: center;
   color: black;
-  
+  margin:  10% auto;
+  width: 50%;
+  border-radius: 10%;
+
+  border-radius: 50px;
 }
 
 .contact-info h2 {
@@ -333,6 +350,12 @@
   padding: 50px;
   text-align: center;
   color: black;
+  border-radius: 10%;
+  margin: auto;
+  width: 50%;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .contact h2 {
@@ -388,4 +411,22 @@ footer {
   text-align: center;
 }
 
-  
+/* Extras */
+
+.border {
+	--x: 50%;
+	--y: 50%;
+
+	position: relative;
+	appearance: none;
+	padding: 1em 2em;
+	color: white;
+	outline: none;
+	border-radius: 30px;
+	border: 2px solid transparent;
+	background: linear-gradient(var(--main-black), var(--main-black)) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), var(--main-white), var(--main-white)) border-box;
+}
+
+
+
+
