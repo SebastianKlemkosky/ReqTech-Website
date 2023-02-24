@@ -1,6 +1,6 @@
 <?php
 // Set the recipient email address
-$to = "sebastianklemkosky@gmail.com";
+$to = "Rudy@reqtech.net";
 
 // Get the form fields
 $name = $_POST['name'];
@@ -40,7 +40,7 @@ echo "<!DOCTYPE html>
 
 
     <!-- Start Message -->
-    <section id='message' class='contact'>
+    <section id='message' class='contact border'>
       <h2>Thank you for contacting</h2>
       <p>We will get back to you as soon as possible</p>
       <p class='back'>Go back to the <a href='index.html'>home page</a></p>
@@ -72,7 +72,7 @@ echo "<!DOCTYPE html>
 
 
     <!-- Start Message -->
-    <section id='message' class='contact'>
+    <section id='message' class='contact border'>
       <h2>There was an error sending your message</h2>
       <p>Please try again later</p>
       <p class='back'>Go back to the <a href='index.html'>home page</a></p>
