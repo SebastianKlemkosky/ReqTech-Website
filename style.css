@@ -101,41 +101,10 @@
   }
     
   /* nav */
-  nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: var(--main-black);
-    align-items: center;
-  }
-
   nav ul{
     list-style: none;
-    background:#444;
+    background:var(--main-blue);
     font-weight: bolder;
-    display: flex;
-    align-items: center;
-    background:none;
-    flex-wrap: wrap;
-    
-  }
-
-  nav div:first-child h1{
-    padding: 0;
-    margin:0 1rem;
-  }
-
-  nav div:first-child img{
-    height: 40px;
-  }
-
-  nav ul li{
-    border-bottom:none;
-    flex: 1 0 auto;
-    position: relative;
   }
 
   nav ul li a{
@@ -145,27 +114,86 @@
     display: block;
     line-height: 1;
     font-size: 100%;
-    padding:1.2rem 1rem;
+  }
+
+  nav ul li{
+    border-bottom: 1px dotted #ddd;
+  }
+
+  /*styling logo*/
+  nav div:first-child{
+    background: var(--main-black);
+  
+  }
+
+  nav div:first-child h1{
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+  }
+
+
+  nav div:first-child h1, nav ul{
+    margin:0;
+  }
+
+  /*Styling for larger devices*/
+  @media only screen and (min-width: 28.0em){
+    nav{
+      display: flex;
+      justify-content: space-between;
+      background: var(--main-black);
+      align-items: center;
+    }
+  
+    nav ul{
+      display: flex;
+      align-items: center;
+      background:none;
+      flex-wrap: wrap;
+    }
+
+    nav div:first-child h1{
+      padding: 0;
+      margin:0 1rem;
+    }
+
+    nav div:first-child img{
+      height: 40px;
+      
+    }
+
+    nav ul li{
+      border-bottom:none;
+      flex: 1 0 auto;
+      position: relative;
+    }
+
+    nav ul li a{
+      padding:1.2rem 1rem;
+    }
+    
+    nav ul li a::before, nav ul li a::after{
+      content: "";
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width:0%;
+      height: 2px;
+      background:var(--main-white);
+      transition: .2s width ease-in-out;
+    }
+  
+    nav ul li a::before{
+      left:0;
+    }
+  
+    nav ul li a:hover::after,nav ul li a:hover::before{
+      width: 50%;
+    } 
+ 
   }
   
-  nav ul li a::before, nav ul li a::after{
-    content: "";
-    position: absolute;
-    bottom:0;
-    right: 0;
-    width:0%;
-    height: 2px;
-    background:var(--main-white);
-    transition: .2s width ease-in-out;
-  }
-
-  nav ul li a::before{
-    left:0;
-  }
-
-  nav ul li a:hover::after,nav ul li a:hover::before{
-    width: 50%;
-  } 
   
   .hero {
     background-size: cover;
