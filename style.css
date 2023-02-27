@@ -321,9 +321,8 @@
   text-align: center;
   color: black;
   margin:  10% auto;
-  width: 50%;
+  width: 80%;
   border-radius: 10%;
-
   border-radius: 50px;
 }
 
@@ -352,8 +351,7 @@
   color: black;
   border-radius: 10%;
   margin: auto;
-  width: 50%;
-
+  width: 80%;
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -412,19 +410,14 @@ footer {
 }
 
 /* Extras */
-
 .border {
-	--x: 50%;
-	--y: 50%;
-
-	position: relative;
 	appearance: none;
 	padding: 1em 2em;
 	color: white;
 	outline: none;
 	border-radius: 30px;
-	border: 2px solid transparent;
-	background: linear-gradient(var(--main-black), var(--main-black)) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), var(--main-white), var(--main-white)) border-box;
+	border: 2px solid transparent var(--main-white);
+  background: var(--main-black);
 }
 
 
