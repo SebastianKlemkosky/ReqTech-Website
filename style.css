@@ -11,6 +11,11 @@
     
   }
   
+  /* This hides the websitehost banner*/
+  img{
+    height: 1px;
+  }
+
   /* box-sizing and font sizing */
   *,
   *::before,
@@ -219,6 +224,8 @@
   }
   
   .hero img{
+    height: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
