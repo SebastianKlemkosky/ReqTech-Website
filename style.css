@@ -275,6 +275,7 @@
   border-radius: 10px;
 }
 
+
 .column1 p{
   border-radius: 30px;
   margin-bottom: 20px;
@@ -285,7 +286,7 @@
   flex-basis: 20%;
   padding: 20px;
   background-color: #d9d9d9;
-  
+  width: 80%;
 }
 
 .column2 iframe {
