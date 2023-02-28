@@ -11,7 +11,9 @@
     
   }
   
-
+  img{
+    height: 1px;
+  }
 
   /* box-sizing and font sizing */
   *,
@@ -290,7 +292,7 @@
   flex-basis: 20%;
   padding: 20px;
   background-color: #d9d9d9;
-  width: 80%;
+  
 }
 
 .column2 iframe {
