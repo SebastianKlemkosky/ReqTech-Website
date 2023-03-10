@@ -13,6 +13,9 @@
     crossorigin="anonymous"
     />
 
+
+
+
   </head>
 
   <!-- START NAV -->
@@ -24,6 +27,7 @@
         </div>
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#message">Message</a></li>
           </ul>
@@ -71,29 +75,31 @@
     
     
     <!-- Start Reviews Section -->
-    <section class="customer-reviews">
+    <section id="reviews" class="customer-reviews">
       <div class="carousel-container border">
         <h2>Customer Reviews</h2>
         <div class="carousel">
-          <div class="review">
-            <p>"Great service and quality products. I've been a loyal customer for years!"</p>
-            <p class="author">- Jane Smith</p>
-          </div>
-          <div class="review">
-            <p>"I had a great experience shopping here. The staff was friendly and helpful."</p>
-            <p class="author">- John Doe</p>
-          </div>
-          <div class="review">
-            <p>"I love this store! They have a great selection of unique items."</p>
-            <p class="author">- Sarah Johnson</p>
-          </div>
+          
         </div>
         <button class="prev-btn">&#10094;</button>
         <button class="next-btn">&#10095;</button>
+
+        <div class="review-cta">
+          <p>Did you enjoy our service? Leave a review on our <a href="https://www.facebook.com/107672455547761/reviews/" target="_blank">Facebook page</a> and let others know!</p>
+        </div>
       </div>
+
+      
+
     </section>
     
-    <script src="reviews.js"></script>
+    <script src="carousel.js"></script>
+    <script src="pull_facebook_reviews.js"></script>
+    <script src="fake_review.js"></script>
+    
+
+    
+    
     <!-- End Reviews Section -->
 
     <!-- Start Contact Info -->
