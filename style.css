@@ -64,6 +64,8 @@
     line-height: 1.4;
     color: var(--main-white);
   }
+
+  
   
   .parallax {
     /* The image used */
@@ -213,7 +215,6 @@
     text-align: center;
   }
   
-  
 
   .hero-content {
     display: flex;
@@ -321,13 +322,126 @@
   }
 }
 
+/* Review Section */
+.customer-reviews {
+  margin: 50px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.customer-reviews h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--main-white);
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  z-index: -1;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.review {
+  flex: 0 0 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.author {
+  font-style: italic;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--main-white);
+  font-size: 32px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.2s ease-in-out;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--main-hover);
+  cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 576px) {
+  .carousel-container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .review {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .review {
+    font-size: 12px;
+  }
+}
+
 
 /* Contact INFO*/
 .contact-info {
-  background-color: #f5f5f5;
   padding: 50px;
   text-align: center;
-  color: black;
   margin:  10% auto;
   width: 80%;
   border-radius: 10%;
