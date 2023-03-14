@@ -8,8 +8,7 @@ fetch('reviews.json')
         <div class="review">
           <p>${review.message}</p>
           <div class="author">
-            <span class="name">${review.name}</span>
-            <span class="rating">${'★'.repeat(review.rating)}</span>
+            <span class="name">- ${review.name}</span>
           </div>
         </div>
       `;

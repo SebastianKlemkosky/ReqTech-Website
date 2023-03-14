@@ -3,25 +3,21 @@
       {
             "message": "These reviews are for of this section and the backend. ",
             "name": "Sebastian Klemkosky",
-            "rating": 5,
             "created_time": "2022-03-09T12:34:56+0000"
       },
       {
         "message": "I absolutely loved my experience with this company! The customer service was top-notch and the quality of their products exceeded my expectations. I will definitely be a returning customer!",
         "name": "Jane Doe",
-        "rating": 5,
         "created_time": "2022-03-09T12:34:56+0000"
       },
       {
         "message": "Good Service for the Price",
         "name": "John Smith",
-        "rating": 5,
         "created_time": "2022-03-07T09:21:44+0000"
       },
       {
         "message": "I was impressed with the speed and quality of their service. Their products are also reasonably priced.",
         "name": "Sarah Johnson",
-        "rating": 4,
         "created_time": "2022-03-03T18:59:33+0000"
       }
     ]
