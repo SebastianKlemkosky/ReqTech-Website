@@ -1,5 +1,5 @@
   :root {
-    --main-black: #1C1C1A;
+    --main-black: #021f4e;
     --main-white: #E9E3E6;
     --main-blue: #0E34A0;
     --main-hover: #444;
@@ -225,17 +225,15 @@
   
   .hero img{
     height: 100%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #dbe4ed;
+    
     background-size: cover;
     margin: 15%;
     border-radius: 10px;
-    background: linear-gradient(45deg, #f0f0f0, #cacaca);
-    box-shadow:  30px -30px 60px #bebebe,
-             -30px 30px 60px #ffffff;
+    
     
   }
   
@@ -321,6 +319,19 @@
     margin: 20px auto; /* center the iframe vertically and horizontally */
   }
 }
+
+.image-carousel-container {
+  text-align: center;
+}
+.image-carousel-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
 
 /* Review Section */
 .customer-reviews {

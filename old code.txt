@@ -1,0 +1,16 @@
+ <!-- Start Reviews Section -->
+    <section id="reviews" class="customer-reviews">
+      <div class="carousel-container border">
+        <h2>Customer Reviews</h2>
+        <div class="carousel">
+          <!-- Reviews Go Here -->
+        </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+
+        <div class="review-cta">
+          <p>Did you enjoy our service? Leave a review on our <a href="https://www.facebook.com/107672455547761/reviews/" target="_blank">Facebook page</a> and let others know!</p>
+        </div>
+      </div>
+
+    </section>

@@ -12,10 +12,6 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
     crossorigin="anonymous"
     />
-
-
-
-
   </head>
 
   <!-- START NAV -->
@@ -41,8 +37,8 @@
     <!-- Start Hero -->
       <section class="hero" >
           <div class="hero-content">
-          <img width="150" height="200"  
-          src="images/ReqTech Logo.jpg" alt="logo">
+          <img width="250" height="250"  
+          src="images\logo.png" alt="logo">
           <p> The Ultimate Pressure Washing Experience!</p>
         </div>
       </section>
@@ -51,44 +47,56 @@
     <!-- Start About -->
     <section id="about">
       <div class="container">
-
         <div class="column1 parallax">
-
           <div class="child border">
             <h2>About us</h2>
-            <p>Introducing San Antonio's reliable pressure washing service! We're a dedicated one-person team providing exceptional results for residential and commercial properties. Contact us for a free estimate through our convenient form!</p>
+        <p>Introducing San Antonio's reliable pressure washing service! We're a dedicated one-person team providing exceptional results for residential and commercial properties. Contact us for a free estimate through our convenient form!</p>
+        <h2>Our Services</h2>
+        <ul>
+          <li>House Washing</li>
+          <li>Patio Cleaning</li>
+          <li>Gutter Cleaning</li>
+          <li>Window Cleaning</li>
+          <li>Deck, Dock, and Fence Cleaning</li>
+        </ul>
           </div>
-          
-          
+          <div class="child border">
+            <div class="image-carousel-container">
+              <img id="carousel-image" src="" alt="Carousel Image">
+            </div>
+            <script src="image_carousel.js"></script>
+            <script>
+              window.onload = function () {
+                var imageIndex = 0;
+                var imageArray = [
+                  'images/Pressure Washing/image1.jpg',
+                  'images/Pressure Washing/image2.jpg',
+                  'images/Pressure Washing/image3.jpg',
+                ];
+    
+                var imgElement = document.getElementById('carousel-image');
+    
+                setInterval(function () {
+                  imageIndex = (imageIndex + 1) % imageArray.length;
+                  imgElement.src = imageArray[imageIndex];
+                }, 2000);
+              };
+            </script>
+          </div>
         </div>
-  
         <div class="column2 parallax border">
-          <h2>Follow our facebook page</h2>
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freqtech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+          <h2>Follow our Facebook page</h2>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freqtech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
     </section>
+    
     <!-- End About -->
     
     
-    <!-- Start Reviews Section -->
-    <section id="reviews" class="customer-reviews">
-      <div class="carousel-container border">
-        <h2>Customer Reviews</h2>
-        <div class="carousel">
-          <!-- Reviews Go Here -->
-        </div>
-        <button class="prev-btn">&#10094;</button>
-        <button class="next-btn">&#10095;</button>
-
-        <div class="review-cta">
-          <p>Did you enjoy our service? Leave a review on our <a href="https://www.facebook.com/107672455547761/reviews/" target="_blank">Facebook page</a> and let others know!</p>
-        </div>
-      </div>
-
-    </section>
+   
     
-    <script src="carousel.js"></script>
-    <script src="pull_facebook_reviews.js"></script>
-    <script src="fake_review.js"></script>
+    
 
     
     
