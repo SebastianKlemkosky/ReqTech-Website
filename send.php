@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = 'Rudy@Reqtech.net, reqtech.website@gmail.com, Sebastian@reqtech.net';
+    $to = 'Rrudy40@gmail.com, reqtech.website@gmail.com';
 
 
     // Set the email subject
